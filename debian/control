@@ -1,0 +1,12 @@
+Source: ca-certificates
+Priority: extra
+Maintainer: Kidong Kim <kd0228.kim@samsung.com>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.7.2
+Section: libs
+
+Package: ca-certificates
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: install basic certificates which be used applications
