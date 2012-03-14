@@ -15,7 +15,7 @@ install basic certificates which be used applications
 
 
 %prep
-%setup -q -n %{name}
+%setup -q 
 
 
 %build
@@ -26,7 +26,7 @@ install basic certificates which be used applications
 rm -rf %{buildroot}
 
 mkdir -p %{buildroot}/opt/etc/ssl/certs/
-cp -af %{_builddir}/%{name}/certs/* %{buildroot}/opt/etc/ssl/certs/
+cp -af certs/* %{buildroot}/opt/etc/ssl/certs/
 
 
 %files
