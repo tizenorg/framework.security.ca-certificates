@@ -6,6 +6,7 @@ Release:    1
 Group:      TO_BE/FILLED_IN
 License:    TO BE FILLED IN
 Source0:    ca-certificates-%{version}.tar.gz
+Source1001: packaging/ca-certificates.manifest 
 
 
 %description
@@ -19,6 +20,7 @@ install basic certificates which be used applications
 
 
 %build
+cp %{SOURCE1001} .
 
 
 
@@ -30,5 +32,6 @@ cp -af certs/* %{buildroot}/opt/etc/ssl/certs/
 
 
 %files
+%manifest ca-certificates.manifest
 %defattr(-,root,root,-)
 /opt/etc/ssl/certs/*
