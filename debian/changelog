@@ -2,15 +2,7 @@ ca-certificates (0.0.1-6) unstable; urgency=low
 
   * 11/12/21
   *  - remove unnecessary file
-  * Git: pkgs/c/ca-certificates
+  * Git: framework/security/ca-certificates
   * Tag: ca-certificates_0.0.1-6
 
- -- Kidong Kim <kd0228.kim@samsung.com>  Wed, 21 Dec 2011 09:50:22 +0900
-
-ca-certificates (0.0.1-5) unstable; urgency=low
-
-  * remove COPYING and AUTHORS
-  * Git: pkgs/c/ca-certificates
-  * Tag: ca-certificates_0.0.1-5
-
- -- Kidong Kim <kd0228.kim@samsung.com>  Sat, 16 Jul 2011 11:18:01 +0900
+ -- Kidong Kim <kd0228.kim@samsung.com>  Wed, 21 Dec 2011 09:44:30 +0900
