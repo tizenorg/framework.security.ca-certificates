@@ -1,0 +1,18 @@
+<manifest>
+	<define>
+		<domain name="ca-certificates"/>
+		<provide>
+			<label name="ca-certificates::ssl-certs" />
+		</provide>
+	</define>
+	<assign>
+		<filesystem path="/usr/share/ca-certificates/certs" label="ca-certificates::ssl-certs" type="transmutable" />
+		<filesystem path="/usr/share/ca-certificates/certs/*" label="ca-certificates::ssl-certs" />
+		<filesystem path="/opt/etc/ssl/certs" label="ca-certificates::ssl-certs" type="transmutable" />
+		<filesystem path="/opt/share/ca-certificates" label="ca-certificates::ssl-certs" type="transmutable" />
+		<filesystem path="/opt/share/ca-certificates/ca-certificate.crt" label="ca-certificates::ssl-certs" />
+	</assign>
+	<request>
+		<domain name="_"/>
+	</request>
+</manifest>
